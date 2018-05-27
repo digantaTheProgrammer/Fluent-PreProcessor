@@ -1,0 +1,40 @@
+Usage :
+
+1) PreProcessor can now be used to Declare complex variables in Simple terms.
+
+To define : <datatype> * <varname>; 
+Write  : pointer to <datatype> <varname> ; [ last semicolon must be seperated by a white-space]
+
+To define  : <datatype> <varname>[<length>];
+Write : array <length> of <datatype> <varname> ;
+
+Some legal definitions example : 
+
+i) pointer to array 6 of int ptr ;
+
+ii) array 10 of pointer to pointer to array 9 of char ;
+
+
+2) PreProcessor can now be used to Declare Complex functions Prototypes in Simple terms.
+
+Syntax : function <function name> which takes ( <argument 1> , <argument 2>, ....) returns (<datatype>) ;
+
+Some legal definitions example : 
+
+i) function f which takes(pointer to int n) returns () ;
+
+ii) function f which takes () returns () ;
+
+iii) function f which takes ( pointer to array 9 of int a, pointer to char b) returns ( pointer to array 7 of int) ;
+
+
+
+3) PreProcessor can now be used to Declare variables with Function type as datatype
+
+Syntax : <description> function <varname> <function description> ;
+
+Some legal definitions example : 
+
+i) pointer to function ptr which takes( pointer to int ,pointer to char) returns(int) ;
+
+ii) array 20 of pointer to function arr which takes(pointer to int ) returns ();
